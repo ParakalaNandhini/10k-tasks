@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        table{
+            color:rgb(25, 8, 136);
+            background-color:antiquewhite;
+        }
+        #head{
+            color:yellowgreen;
+            background-color:rgb(47, 0, 255);
+        }
+        .semi{
+            color:rgb(51, 245, 13);
+        }
+        .chance1,.chance2{
+            color:rgb(6, 100, 69)
+        }
+        table,th,td{
+            border: 2px double black;
+            border-collapse: collapse;
+            font-size: xx-large;
+        
+        }
+        .bgcolor{
+            background-color:yellow;
+        }
+        .win{
+            background-color: green;
+        }
+        #t1,#t2,#t3,#t4{
+            background-color: red;
+        }
+        .font,.font1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .font2{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 300;
+            font-style: oblique;
+        }
+        * {
+            text-align: center;
+        }
+        body {
+            background-image: url("../World-Cup-2023.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="font1"><u>Points table</u></h2> 
+        <table class="center"> <tr id="head" class="font">
+        <th>Team</th>
+        <th>Matches</th>
+        <th>Win</th>
+        <th>Loss</th>
+        <th>NRR</th>
+        <th>Points</th>
+    </tr>
+    <tr class="semi win font2">
+        <td><abbr title="India">IND</abbr></td>
+        <td>8</td>
+        <td>8</td>
+        <td>0</td>
+        <td>+2.456</td>
+        <td>16</td>
+    </tr>
+    <tr class="chance1 bgcolor">
+        <td><abbr title="South Africa">SA</abbr></td>
+        <td>8</td>
+        <td>6</td>
+        <td>2</td>
+        <td>+1.376</td>
+        <td>12</td>
+    </tr>
+    <tr class="chance2 bgcolor">
+        <td><abbr title="Australia">AUS</abbr></td>
+        <td>8</td>
+        <td>6</td>
+        <td>2</td>
+        <td>+0.861</td>
+        <td>12</td>
+    </tr>
+    <tr>
+        <td><abbr title="New Zealand">NZ</abbr></td>
+        <td>9</td>
+        <td>5</td>
+        <td>4</td>
+        <td>+0.743</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td><abbr title="Pakistan">PAK</abbr></td>
+        <td>8</td>
+        <td>4</td>
+        <td>4</td>
+        <td>+0.036</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td><abbr title="Afghanistan">AFG</abbr></td>
+        <td>8</td>
+        <td>4</td>
+        <td>4</td>
+        <td>-0.338</td>
+        <td>8</td>
+    </tr>
+    <tr id="t4">
+        <td><abbr title="England">ENG</abbr></td>
+        <td>8</td>
+        <td>2</td>
+        <td>6</td>
+        <td>-0.885</td>
+        <td>4</td>
+    </tr>
+    <tr id="t3">
+        <td><abbr title="Bangladesh">BAN</abbr></td>
+        <td>8</td>
+        <td>2</td>
+        <td>6</td>
+        <td>-1.142</td>
+        <td>4</td>
+    </tr>
+    <tr id="t2">
+        <td><abbr title="Sri Lanka">SL</abbr></td>
+        <td>9</td>
+        <td>2</td>
+        <td>7</td>
+        <td>-1.419</td>
+        <td>4</td>
+    </tr>
+    <tr id="t1">
+        <td><abbr title="Netherlands">NED</abbr></td>
+        <td>8</td>
+        <td>2</td>
+        <td>6</td>
+        <td>-1.635</td>
+        <td>4</td>
+    </tr>
+    </table>
+</body>
+</html>
