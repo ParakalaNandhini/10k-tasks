@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            font-family:'Brush Script MT';
+            font-size: xx-large;
+        }
+        ol{
+            background-color: rgb(238, 223, 10);
+        }
+        .outer{
+            border: 4px solid rgb(209, 14, 14);
+            border-collapse: collapse;
+            background-image: url(../R.jpeg);
+            background-repeat :no-repeat;
+            background-size:cover;  
+        }
+        .b{
+            padding-left: 100px;
+        }
+        .a{
+            padding-right: 100px;
+        }
+        #heading{
+            font-family: 'Brush Script MT';
+            color: rgb(255, 0, 21);
+            background-color: aqua;
+            }
+            summary{
+                color:blue;
+        }
+        #form{
+            font-family:cursive;
+            color:darkmagenta;
+            background-color:rgb(245, 214, 175);
+        }
+        .ab{
+            color:rgb(177, 12, 12);
+            background-color:rgb(245, 214, 175);
+            font-family: cu;
+        } 
+    </style>
+</head>
+<body>
+    <center><h1 id="heading">Task of the day</h1></center>
+    <center><details>
+        <summary>MENU</summary>
+    <table class="outer" height="500">
+        <tr>
+            <td class="b"><img src="../side.jpg" height="1900"width="650"</td>
+    <td class="a"><ol>
+        <br>
+        <br>
+        <center><li type="none">SALADS</center>
+            <hr>
+            <table>
+                <tr>
+                    <td><h4>Greek Salad</h4><p>A salad made with tomatoes, cucumbers, onions, feta cheese, and olives, dressed with olive oil and lemon juice </p></td>
+                    <td>10$</td>
+                </tr>
+                <br>
+                <tr>
+                    <td><h4>Caesar Salad</h4><p> A classic salad made with romaine lettuce, croutons, and parmesan cheese, dressed with a creamy Caesar dressing </p></td>
+                    <td>8$</td>
+                </tr>
+                <br>
+                <tr>
+                    <td><h4>Cobb Salad</h4><p>A salad made with lettuce, tomatoes, avocado, bacon, chicken, and blue cheese, dressed with a vinaigrette</p></td>
+                    <td>6.75$</td>
+                </tr>
+                <br>
+            </table>
+        </li>
+        <br>
+            <center><li type="none">MAIN DISHES</center>
+                <hr>
+                <table>
+                    <tr>
+                        <td><h4>Hyderabadi Biryani</h4><p>A Popular hyderabadi dish made with chicken and bhasmati rice  </p></td>
+                        <td>5$</td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td><h4>Vegetarian Lasagna</h4><p> A classic Italian dish made with layers of pasta, tomato sauce, and a variety of vegetables such as spinach, zucchini, and mushrooms </p></td>
+                        <td>3$</td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td><h4>Creamy Tomato pasta</h4><p> A creamy and tangy pasta dish that is easy to make and perfect for a family dinner</p></td>
+                        <td>1.25$</td>
+                    </tr>
+                    <br>
+                </table>
+                </li>
+                <br>
+                <center><li type="none">DRINKS</center>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td><h4>Soft Drink can</h4><p>Soda or soft drinks are carbonated beverages that are often consumed as a refreshing drink</p></td>
+                            <td>2$</td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td><h4>Beer</h4><p> A classic salad made with romaine lettuce, croutons, and parmesan cheese, dressed with a creamy Caesar dressing </p></td>
+                            <td>8$</td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td><h4>Orange juice</h4><p>Freshly squeezed orange juice: a burst of citrus sunshine in every sip.</p></td>
+                            <td>3$</td>
+                        </tr>
+                        <br>
+                    </table>
+                </li>
+                <br>
+                <center><li type="none">DESSERTS</center>
+                    <hr>
+                    <table>
+                            <tr>
+                                <td><h4>Custard</h4><p>A creamy dessert made with milk, sugar, and eggs that can be served hot or cold</p></td>
+                                <td>2$</td>
+                            </tr>
+                            <br>
+                            <tr>
+                                <td><h4>Molten chocolate cake</h4><p> A chocolate sponge cake with a liquid chocolate center that oozes out when cracked open  </p></td>
+                                <td>3$</td>
+                            </tr>
+                            <br>
+                            <tr>
+                                <td><h4>Paris-Brest</h4><p> A French pastry that is shaped like a bicycle wheel and filled with hazelnut and almond mousseline praliné cream</p></td>
+                                <td>1.5$</td>
+                            </tr>
+                            <br>
+                        </table>
+                    </li>
+    </ol></td>
+        </tr>
+</table>
+</details>
+
+    <details >
+        <summary>Feedback</summary>
+        <fieldset class="ab">
+            <legend><h1 id="form">Feedback on my UI</h1></legend>
+        <form>
+            <label for="Fame">FirstName:</label>
+            <input name="FirstName" id="Fame" type="text" placeholder="enter name"/>
+            <br>
+    
+            <label for="Sname">SecondName:</label>
+            <input name="SecondName" id="Sname" type="text" placeholder="enter name"/>
+            <br>
+    
+            <label for="ph">mobile number:</label>
+            <input name="ph" id="ph" type="number" placeholder="enter number"/>
+            <br>
+
+            <label for="mail">email:</label>
+            <input name="mail" id="mail" type="email" placeholder="enter mail"/>
+            <br>
+            Enter your gender:
+            <label for="male">male</label><input type="radio"value="male" name="gender" id="male">
+            <label for="female">female</label><input type="radio"value="female" name="gender" id="female">
+            <label for="others">others</label><input type="radio"value="others" name="gender" id="others">
+            <br>Feedback on my UI:<br>
+            <textarea rows="3" cols="30" required></textarea>
+            <br>
+            <button formaction="./tq.html">submit</button>
+        </form>
+    </details>
+</center>
+
+    
+</body>
+</html>
