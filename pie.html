@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image:url(../R.jpeg)
+        }
+        .outer{
+            border: 5px solid red;
+            height: 600px;
+            width: 700px;
+            display: flex;
+            flex-direction: column;
+            background-image: linear-gradient(aquamarine,aqua);
+            margin:30%;
+        }
+        .pie{
+            border:2px solid black;
+            height:200px;
+            width:200px;
+            background-image: conic-gradient(red 0deg, red 45deg, yellow 45deg, yellow 100deg, green 100deg, green 150deg, blue 150deg,blue 175deg,pink 175deg, pink 275deg,indigo 275deg);
+            border-radius: 50%;
+            margin: 50px;  
+            display: flex;      
+        }
+        .info{
+            border:3px solid black;
+            height:300px;
+            width:250px;
+            margin: 90px;
+
+        }
+        .m{
+            display:flex;
+        }
+        li{
+            font-size:20px;
+            font-style: italic;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <h2>Various Expenditures(in %) Incurred In Publishing a book</h2>
+        <div class="m">
+        <div class="pie"> 
+        </div>
+        <div class="info">
+            <ul type="none">
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAMAAABmmnOVAAAAWlBMVEX+AAD/AADtAADtk5P0vLfpCAjo5d/zvrntlZXm2NTpAAD7AQDq4t7m1tPc3dHwurT33NnQAADplpXS3M7n2tDh3Nj36efxvsH0vMD0vbzXCBPWAAD00NHZ29PrxKwhAAABSUlEQVR4nO3cy3KCQBCF4dbAxCGMFzJEyeX9XzMgVIWaRFOu+iz+XmA5UvhVl57pBWqv+5xzijGm8ZDifLg+Tmvxz4W4nLlaWL2wXkjLZW8sjE9y7nvbv50vw7NbDdXhGCyf3+vGs05da/lSb1xru2stDvXG/OplRlQgJkTwRpgOIoFQQkh8JviKCiEkEhPED8I5JyQ6IZETIECAuI9gqBFByMwTIED8RgjkBEMNCBDiCIGcEOkECKkNDASIEiEQVgw1IECIIwRyQqQTIKQ2MBAgSoRAWDHUgAAhjhDICZFOgJDawECAKBGEFQgQIP5DkBMiCKG9AwSIEsE9uqaREyBAgLiPYKgRQQhtYCBAlAiJoYawAiGJSL6/sF86MTSehjknctV4/t3B3Il8OG1d66ML1h+73ZNndZ8jop0qPFY3z3/0QmF6769v1JArmxG6+eUAAAAASUVORK5CYII=" height="20px">Printing Cost</li>
+            <br>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANkAAAB6CAMAAAAF6AYEAAAAA1BMVEX6+jNOqqP9AAAAMUlEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzwBn5AABC4mrUwAAAABJRU5ErkJggg=="height="20px" width="20px">Painting Cost</li>
+            <br>
+            <li><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHcAswMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAACAwEABf/EABkQAQEBAQEBAAAAAAAAAAAAAAEAEQISMf/EABcBAQEBAQAAAAAAAAAAAAAAAAABAgb/xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQH/2gAMAwEAAhEDEQA/APBCQWhILn3MbrAkEgkFEE5kEgkcwHzaczObTmIHm3zUy7zBPzd5q+bvNBLzZ5reY+aiTzF5rvMXmCLzFKzzFIqSQSskUgikErpBKriWXTy6KqEguCfJRlwTC4JhEYEgtCYRBCQWhIKA+bfMglkSp+bvNTLspSp5Z5q5FKlTSKVUsyFReYpVSKRpJIJWSCVEkglVIMVLLp5dFUCZHmZEIJhEqERoSCwmUZcEguCQURwW5aGy8wALckFuQTyzJpYkE0ilRikE0ik0i1VNIJUSDVpNKaVWDFTtuugoTKZMgoTIEyjJkiBMmoZKBMohc/JEBkRDuyy7aDIpJYLUYxZMWKDGTBriiwZsGKDTSo02rQ3XXQbzU5pcsxgqSKZMiKDMaYyGjKgzGkMhiKDaNMbdoKbdsNu2BLZsdsWDdit2xWo5YrcsFjWOWC2rBYrGmsmC1Vl0duitGQ0hmMSKjMaIzGIsMhojP1QVG3aQy9RIpstpDdsRX1dtPbtgfqxY7ZsD2KxeovUWEsFueoLFasVsWK1HLBblgsVu2R26rTBmdURkMFhkNE6mMRU6kNI6t9URYbdpHV3qCx1adUhu2JFvV3qjt2wivqxae3eoQ/Vj1B6s9RSeorF6isCWK2LBaqSwWx6isWN26O3RRGQ3XVC206tuoNOpHVl0TSG31ddRG+rttugzbttugz1dt10GbZt10GLF6uuqorYt10BWK2XVVm23XRX/2Q"height="20px" width="20px">Binding Cost</li>
+            <br>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAM4AAAB0CAMAAAD6kP3lAAAAA1BMVEUAAP+KeNJXAAAALklEQVR4nO3BMQEAAADCoPVP7W8GoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeANdzAABA/erPwAAAABJRU5ErkJggg"height="20px" width="20px">Promotion Cost</li>
+            <br>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMUAAAB+CAMAAACj6yV0AAAANlBMVEX/wMv/////vcn/ws7/3OL/1t3/+vv/x9H/ytP/7/L/4uf/usb/2d//5ur/9vf/1NzKmKH/z9dHDoHlAAACDElEQVR4nO3dyW4rIRAFUCjGAqoJ//+zqbYdxYPoSC+SHx3ds7C86EXdhmLY2ObDmbNzH+b8IcyfyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsAaqiv53Fb9ClJswS8vmvEFqFnvDuR4+SvQdc60fZSJv7/ij0QjFd5JyfYTDQgNHYh/IfDSIN7E5Z60+kdlaXWY8KNgn81dMXGhrIsNukesWWszvLPVAeg5h56URx82mPYVr0Wwc0yJzispe+PYQo8xqI+bhaE9Ru6aINi+SImkAbvzQ4HaeYm8a/krRWkxvLXYq60DoNO8PKaavOPT9Y6RC2ZuWyY931jq197ZnbdZbS/DlS5sOBl0/dERo3yBpjRlVvY1dJ9UmnotOrCzif9gzFqQ7Xhyawm9FStcIOZaD9l4UaUMUz+xb8HFIsxJ0E+wnS7F3txW5X2n1++GOTJduoK++WKM1+GXXszwtzJmUwhh69tXVKqQ6WhphgVMItdcU8yPIGN1nI85I1jR++JR8kgVGg7aXoZg/LBxKd5JzqaaZznoclLDEipbi0zFqflNKRXIZmsJJpWaamOq8Ke+sdobGQ4w4Dl5t77Xp6lyp672whCollbLGNYPuO5wP76y3lely56PrAkVrLFJm3zWuJw8rfZma/oHWnsZI7swZAADOa4Ej66858yf+reATa1YOax67edQAAAAASUVORK5CYII="height="20px" width="20px">Transportation Cost</li>
+            <br>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASEAAACvCAMAAACFDpg1AAAAk1BMVEU3HXb///8nAG+tprv///z8/PzW1tbf39/T09P6+vr9/Pmtra2/v7/j4+N5eXr39/eUlJShoaGDg4N0dHT09PHu7uumpaXJycm0tLTq6uuJi4nZ29nn6eaxs7B9fX2Xl5dkZGQAAAAtLCxoaGiurrBGR0hZWlvAwMKEhoPMzcuWmZZRU1EmKSZ5fHmEh4TNz8w/Pz8QOLTYAAAClklEQVR4nO3W23KbMBCAYW+LOB8lDFg4OK3t1GnrNu//dJUJTtLONOmNctP/8wFYsRq8I/CuVgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADw3/qA160+4nUrweuo0Fu8V0i51+P2sqt+C86xp8jlPXuZds29fKsXB79N4tUq8C0NJA/FbdKgDdI0uHzm73Q5DIrsMjyH5tFrXtCu3ad1g20gbZW263SeY72+bMRF2/W6fUrw5B3WkEh3/7hjkzF7Hsn7ZSey8udSmFdXZMoh17eFZHdSmagwupPwk3Q6q7LPKqn3MjSl9r2I/D+HBtMfjAm16g5HrY/9QQ/F7e5QhuYu3pluPekvdT6IhGUdTSbeTbupTKQqREWbSIcyDFEziW2qTXHIqroUHW/kS5lsYuNqU298X7/vCgVyupEuv/96DprxlI7Z9jh963/IuQ/yfrRytjcyfrfuvPMoX/vifNqWWzvKeJe67B8/pTXbk9jq280+TW1Tb2vpb8xWzm7YBFKcJE39/gL/a6jKbRbH9VTV8dTGzUZLFdVSZU2eh1ZKO6hYT24lTGNV99GklVZ1PGcqG8t6qgo9PTSN6CHcmFo/dJW4+OTGjYiOvD+q/VcoK3NXoS43ZdjoYn+fmS5qpDN9uB8vd1mp8yba9WForLvLQlvZpAkfMx90Xd9NubuXxJqsKI2r3E4a08juaAt9bIra++W/x7/9v0ffnkL9LeKP7wqppW2Z+xz3TpY+5rH7mQdc7NoGqWUsWZKvHZS6TiDXyZbs5B36Ic/zXwskL3tGtZRiOb52gku/+NxHqqcT3X4iz8nqOVP5rtAvKbo2d/rHUagAAAAASUVORK5CYII"height="20px" width="20px">Royalty cost</li>
+        </ul>
+        </div>
+        </div>
+</div>
+</body>
+</html>
