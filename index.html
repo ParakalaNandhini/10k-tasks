@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp</title>
+    <style>
+        .outer{
+            border:3px solid black;
+            border-radius: 20px;
+            width: 500px;
+            box-shadow: 5px 5px 5px  rgb(61, 60, 60);
+            display: flex;
+            flex-direction: column;
+            margin-left: 500px;
+        }
+        .header{
+            display:flex;
+            height: 70px;
+            align-items: center;
+            justify-content: flex-end;
+            gap:30px;
+            position: relative;
+            background-color:darkcyan;
+            border-radius: 18px 18px 0px 0px;
+            z-index:1;
+        }
+        h2{
+            position: absolute ;
+            left: 6px;
+            top:1px;
+            color:aliceblue;  
+        }
+        .main{
+            position: sticky;
+            top:-1px;
+            height:40px;
+            border:1px solid transparent;
+            display:flex;
+            justify-content: space-around;
+            color:aliceblue;
+            background-color: darkcyan;
+            box-shadow: 0px 2px 1px rgb(141, 131, 131); 
+            margin-bottom: 20px;
+            z-index:1;
+        }
+        img{
+            border-radius: 50%;
+            position:absolute;
+            left:20px;
+            top: 18px;
+        }
+       .info{
+          position: relative;
+          height: 70px;          
+        } 
+        .chat{
+            position: absolute;
+            top:0px;
+            left:70px
+        }
+        .msg{
+            position:absolute;
+            left: 70px;
+            top:30px;
+        }
+        .time{
+            position: absolute;
+            right: 30px;
+            top: 5px;
+        }
+        .tick{
+            position: absolute;
+            top:50px;
+            left:70px;
+
+        }
+        .msg1{
+            position: absolute;
+            left:90px;
+            top:30px;
+        }
+        .fixed{
+            color: aliceblue;
+            background-color: darkcyan;
+            padding: 10px;
+            border-radius: 20px;
+            position: fixed;
+            bottom:40px;
+            right:500px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="outer">
+        <div class="header"> <h2 >Whatsapp </h2>
+            <i class="fa fa-camera" style="font-size:24px; color:aliceblue"></i>
+            <i class="fa fa-search" style="font-size:24px; color:aliceblue"></i>
+            <i class="fa fa-ellipsis-v" style="font-size:24px; color:aliceblue"></i>
+            <br>
+         </div>
+        <div class="main"> 
+            <h3 style="text-decoration:underline;">Chats</h3>
+            <h3>Status</h3>
+            <h3>Calls</h3>
+           
+        </div>
+        <div class="content">
+        <div class="info">
+            <br>
+            <img src="./images/smile.jpeg"height="40" width="40"/>
+            <h3 class="chat">Nandhu<i class="fa fa-heart" style="font-size:20px;color:red"></i></h3>
+            <p class="msg">Sare</p>
+            <p class="time">11:00AM</p>
+            <br>
+        </div>
+        <div class="info">
+            <br>
+            <img src="./images/chandler.jpg"height="40" width="40"/>
+            <h3 class="chat">Rishi</i></h3>
+            <p class="msg">Ok</p>
+            <p class="time">9:00AM</p>
+            <br>
+        </div>
+        <div class="info">
+            <br>
+            <img src="https://1.bp.blogspot.com/-_KGEllIetww/XcF_WwjtatI/AAAAAAAACek/e52YmrWDECc7Ib78gmf1wwn8G_QuD6Z2QCEwYBhgL/s1600/Hidden-Face-Dp-for-Girls%2B%252825%2529.jpg"height="40" width="40"/>
+            <h3 class="chat">Saavi... <i class="fa fa-heart" style="font-size:20px;color:red"></i></h3>
+            <img  class="tick"src="https://cdn0.iconfinder.com/data/icons/user-interface-icons-1/58/Double_check_mark_icon-512.png" height="15"/>
+            <p class="msg1">Sare</p>
+            <p class="time">12:26 AM</p>
+            <br>
+        </div>
+        <div class="info">
+            <br>
+            <img src="./images/Actor-Nani-Images-10.webp"height="40" width="40"/>
+            <h3 class="chat">Annaya <i class="fa fa-heart" style="font-size:20px;color:red"></i></h3>
+            <p class="msg">Gn</p>
+            <p class="time">12:25 AM</p>
+            <br>
+        </div>
+        <div class="info">
+            <br>
+            <img src="https://th.bing.com/th/id/OIP.icE6jJrIYNu_fRNlU5b91QHaHa?rs=1&pid=ImgDetMain"height="40" width="40"/>
+            <h3 class="chat">97r-10000coders-offline</h3>
+            <p class="msg">Someone:Ok sir</p>
+            <p class="time">Yesterday</p>
+            <br>
+        </div>
+        <div class="info">
+            <br>
+            <img src="./images/aamir-khan.jpg"height="40" width="40"/>
+            <h3 class="chat">Varsha</i></h3>
+            <img  class="tick"src="https://cdn0.iconfinder.com/data/icons/user-interface-icons-1/58/Double_check_mark_icon-512.png" height="15"/>
+            <p class="msg1">HA</p>
+            <p class="time">Yesterday</p>
+            <br>
+        </div>
+        <div class="info">
+            <br>
+            <img src="./images/s.jpeg"height="40" width="40"/>
+            <h3 class="chat">Sweety</i></h3>
+            <p class="msg"> You reacted <i class="fa fa-heart" style="font-size:20px;color:red"></i> to "Thanks" </p>
+            <p class="time">Yesterday</p>
+            <br>
+        </div>
+        <div class="info">
+            <br>
+            <img src="./images/radhakrishna.webp"height="40" width="40"/>
+            <h3 class="chat">Mummy<i class="fa fa-heart" style="font-size:20px;color:red"></i></h3>
+            <img  class="tick"src="https://cdn0.iconfinder.com/data/icons/user-interface-icons-1/58/Double_check_mark_icon-512.png" height="15"/>
+            <p class="msg1">Gn amma<i class="fa fa-heart" style="font-size:20px;color:red"></i></p>
+            <p class="time">Yesterday</p>
+            <br>
+        </div>
+        <div class="info">
+            <br>
+            <img src="./images/smart.jpeg"height="40" width="40"/>
+            <h3 class="chat">+91 9684523791</h3>
+            <p class="msg">Hi</p>
+            <p class="time">Yesterday</p>
+            <br>
+        </div>
+        <div class="info">
+            <br>
+            <img src="./images/rajni.jpg"height="40" width="40"/>
+            <h3 class="chat">Dady<i class="fa fa-heart" style="font-size:20px;color:red"></i></h3>
+            <p class="msg">Sare nani</p>
+            <p class="time">11/17/23</p>
+            <br>
+        </div>
+        </div>
+        <div class="fixed"><i class="fa fa-commenting-o" style="font-size:36px"></i></i></div>
+    
+</body>
+</html>
