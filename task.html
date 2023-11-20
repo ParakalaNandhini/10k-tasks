@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .outer{
+        border: 2px solid rgb(48, 15, 232);
+        height: 650px;
+        border-radius: 20px;
+        box-shadow: 2px 2px  rgb(83, 198, 236);
+        background-image: linear-gradient(green,rgb(241, 241, 102))
+    }
+    .head{
+        background-image: url(./images/ind\ vs\ aus.jpg);
+        background-repeat: no-repeat;
+        background-size:1500px 200px;
+        position: relative; 
+        height: 200px;
+        border-radius: 20px;
+       
+    }
+    h1{
+        position: relative;
+        left: 600px;
+        font-weight: bolder;
+        bottom: 100px;
+        color: aliceblue;
+        font-family: "forte";
+        font-size: 45px;
+    }
+    .line{
+        position: relative;
+        left: 680px;
+        font-size:30px;
+        font-weight:600;
+        color:azure;
+        bottom: 80px;
+        font-family: "Freestyle Script";
+    }
+    img{
+        position: relative;
+        left: 250px;
+        top:30px;
+    }
+    .india{
+        border:1px solid crimson;
+        position : relative;
+        height: 230px;
+        background-image: linear-gradient(lightblue,rgb(95, 214, 244));
+        border-radius: 20px;
+        
+    }
+    .aus{
+        border:1px solid crimson;
+        position : relative;
+        border-radius: 20px;
+    }
+    .india1{
+        padding:20px;
+        position:absolute;
+        top:10px;
+    }
+    .aus1{
+        padding:20px;
+        position:relative;
+        top:5px;
+        
+    }
+    .i{
+       position: absolute; 
+       right: 40px;
+       font-size: larger;
+       font-family:cursive;
+    }
+    .a{
+        position: absolute; 
+        right: 20px;
+        font-size: larger;
+        font-family:cursive;
+        bottom:35px;
+    }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="head">
+        <img src="https://blog.playerzpot.com/wp-content/uploads/2019/06/IND-vs-AUS-3.png" height="100px" width="200px"> 
+            <h1>WORLD CUP FINALS</h1>
+            <p class="line">INDIA VS AUSTRALIA</p>
+         </div>
+        <div class="india">
+            <img  class="india1" src="./images/india.jpg" height="180px" width="250px">
+            <pre class="i"> NO. OF MATCHES WON IN THIS SEASON: 9<br>
+            India Playing Squad :Rohit Sharma (c), Shubman Gill, Virat Kohli,
+             Shreyas Iyer, KL Rahul, Ishan Kishan, Suryakumar Yadav, Ravindra Jadeja, 
+             Shardul Thakur, Jasprit Bumrah, Kuldeep Yadav, Mohammed Shami,
+             Mohammed Siraj, Ravichandran Ashwin, Prasidh Krishna</pre>
+        </div>
+        <div class="aus"></div>
+        <img src="./images/aus.jpg" class="aus1" height="180px" width="250px">
+        <pre class="a">NO. OF MATCHES WON IN THIS SEASON : 7<br>
+         Australia Playing Sqyuad:Pat Cummins (c), Steven Smith, 
+         Alex Carey, Josh Inglis (wk), Sean Abbott, Cameron Green,
+          Josh Hazlewood, Travis Head, Mitchell Marsh, Glenn Maxwell, 
+          Marcus Stoinis, David Warner, Adam Zampa, Mitchell Starc, Marnus Labuschagne</pre>
+    </div>
+</body>
+</html>
