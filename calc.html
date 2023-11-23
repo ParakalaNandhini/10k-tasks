@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+           border:3px solid black;
+           height:580px;
+           width:360px;
+           border-radius: 20px;
+           background-color:azure;
+           margin-left:550px;
+           margin-top: 50px;
+        }
+        .header{
+            display: flex;
+            justify-content: space-around;
+            font-family: "Bookman Old Style";    
+        }
+        .m{
+            border:1px solid black;
+            height:50px;
+            width:150px;
+            margin:10px;
+            border-radius: 10px;
+            background-color: black;
+        }
+        .mt{
+            border:1px solid black;
+            height:80px;
+            border-radius: 10px;
+            margin:10px;
+            background-color:rgb(123, 159, 160);
+            font-size: 60px;
+            text-align: right;
+        }
+        .num{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            gap:20px;
+            padding: 10px;
+
+        }
+        .items{
+            border:1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 50px;
+            border-radius: 10px;
+        }
+        .item1{
+            grid-area: 5 / 5 /span 2 ;
+            border:1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>C A S I O</h1>
+            <div class="m"></div>
+        </div>
+        <div class="mt">9+8</div>
+        <div class="num">
+            <div class="items">(</div>
+            <div class="items">)</div>
+            <div class="items">%</div>
+            <div class="items">TAX-</div>
+            <div class="items">TAX+</div>
+            <div class="items">MC</div>
+            <div class="items">MR</div>
+            <div class="items">M-</div>
+            <div class="items">M+</div>
+            <div class="items">/</div>
+            <div class="items">+/-</div>
+            <div class="items">7</div>
+            <div class="items">8</div>
+            <div class="items">9</div>
+            <div class="items">*</div>
+            <div class="items">C</div>
+            <div class="items">4</div>
+            <div class="items">5</div>
+            <div class="items">6</div>
+            <div class="items">-</div>
+            <div class="items">AC</div>
+            <div class="items">1</div>
+            <div class="items">2</div>
+            <div class="items">3</div>
+            <div class=" item1">+</div>
+            <div class="items">0</div>
+            <div class="items">00</div>
+            <div class="items">.</div>
+            <div class="items">=</div>
+        </div>
+    </div>
+</body>
+</html>
