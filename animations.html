@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thirsty crow story</title>
+    <style>
+        .main{
+            border:3px solid black;
+            height:690px;
+            width:1060px;
+            display: flex;
+            gap:5px;
+            flex-wrap: wrap;
+            margin-left: 100px;
+            padding:0px 100px 0px 100px;
+            background-image: linear-gradient(skyblue,aqua,aquamarine,rgb(152, 226, 226));
+        }
+        .first{
+            border:3px solid black;
+            height:320px;
+            width: 500px;
+            margin: 10px;
+            background-image:url(./images/crop.png);
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .second{
+            border:3px solid black;
+            height:320px;
+            width: 500px;
+            margin: 10px;
+            background-image:url(./images/crop.png);
+            background-repeat: no-repeat;  
+            position: relative;
+        }
+        .third{
+            border:3px solid black;
+            height:320px;
+            width:500px;
+            margin: 10px;
+            background-image:url(./images/crop.png);
+            background-repeat: no-repeat;   
+            position: relative;
+        }
+        .fourth{
+            border:3px solid black;
+        height:320px;
+        width:500px;
+        margin: 10px;
+        background-image:url(./images/crop.png);
+        background-repeat: no-repeat;   
+        position: relative;
+        }
+        img{
+            position: absolute;
+            border-radius: 50%;
+        }
+        @keyframes crowposition {
+            from{margin-left:50px;}
+            to{margin-left:420px;}
+
+        }
+        @keyframes go {
+            0%{left:0px;top:0px;}
+            25%{left:100px;top:10px;}
+            50%{left:250px;top:50px;}
+            100%{left:380px;top:110px;}
+        }
+        .go{
+            animation-name: go;
+            animation-duration: 5s;
+            animation-delay:5s;
+
+        }
+        .fly{
+            animation-name: crowposition;
+            animation-duration: 5s;
+            position:absolute;
+            top:20px;
+
+        }
+        .pot {
+            width: 100px;
+            height: 100px;
+            background-color:#D2691E;
+            position: relative;
+            border-radius: 50% 50% ;
+            top: 210px;
+            left:380px;
+          }
+          .rim {
+              width: 50px;
+              height: 20px;
+              background-color: #D2691E;
+              position: absolute;
+              top: 0;
+              left: 25px;
+              border-radius: 10px;
+            }
+            .rim1{
+              width: 40px;
+              height: 20px;
+              background-color: #D2691E; /* Chocolate brown */
+              position: absolute;
+              top: -12px;
+              left: 30px;
+              border-radius: 50px;
+            }
+            .pebbles{
+                border:1px solid transparent;
+                width:65px;
+                height:30px;
+                background-color: aqua;
+                padding: 5px;
+                position: absolute;
+                left:10px;
+                top: 50px;
+                border-radius: 0px 0px 20px 20px;
+            }
+            .ball{
+                border:1px solid transparent;
+                border-radius: 50%;
+                width:10px;
+                height:10px;
+                background-color: grey;
+                position: absolute;
+                top:25px;
+            }
+            .ball1{
+                border:1px solid transparent;
+                border-radius: 50%;
+                width:10px;
+                height:10px;
+                background-color: grey;
+                position: absolute;
+                top:28px;
+                left:18px;
+            }
+            .ball2{
+                border:1px solid transparent;
+                border-radius: 50%;
+                width:10px;
+                height:10px;
+                background-color: grey;
+                position: absolute;
+                top:28px;
+                left:30px;
+            }
+            .ball3{
+                border:1px solid transparent;
+                border-radius: 50%;
+                width:10px;
+                height:10px;
+                background-color: grey;
+                position: absolute;
+                top:28px;
+                left:45px;
+            }
+            .ball4{
+                border:1px solid transparent;
+                border-radius: 50%;
+                width:10px;
+                height:10px;
+                background-color: grey;
+                position: absolute;
+                top:25px;
+                left:60px;
+            }
+            .ball5{
+                border:1px solid transparent;
+                border-radius: 50%;
+                width:10px;
+                height:10px;
+                background-color: grey;
+                position: absolute;
+                top:0px;
+                left:18px;
+            }
+            .ball6{
+                border:1px solid transparent;
+                border-radius: 50%;
+                width:10px;
+                height:10px;
+                background-color: grey;
+                position: absolute;
+                top:10px;
+                left: 50px;
+            }
+            .steady{
+                position: absolute;
+                top: 130px;
+                left:370px;
+            }
+            @keyframes fall {
+                from{top:-80px;left:20px;}
+                to{top:28px;}
+            }
+            .fall{
+                animation-name: fall;
+                animation-duration: 3s;
+                animation-iteration-count: 4;
+                animation-delay:10s;
+            }
+            .ball7{
+                border:1px solid transparent;
+                border-radius: 50%;
+                width:10px;
+                height:10px;
+                background-color: grey;
+                position: absolute;
+                top:px;
+                left: 50px;
+            }
+            .pot1 {
+                width: 100px;
+                height: 100px;
+                background-color:aqua;
+                position: relative;
+                border-radius: 50% 50% ;
+                top: 210px;
+                left:380px;
+                border:5px solid #D2691E;
+              }
+              .rim2 {
+                  width: 50px;
+                  height: 20px;
+                  background-color:aqua;
+                  position: absolute;
+                  top: 0;
+                  left: 25px;
+                  border-radius: 10px;
+                }
+                .rim3{
+                  width: 40px;
+                  height: 20px;
+                  background-color:aqua; /* Chocolate brown */
+                  position: absolute;
+                  top: -12px;
+                  left: 30px;
+                  border-radius:20px;
+                  /*transform: rotate(20deg);*/
+                  border:1px solid transparent;
+                }
+                .water{
+                    position: absolute;
+                    top:210px;
+                    left:380px;
+                }
+                .steady1{
+                    position: absolute;
+                    top: 140px;
+                    left:370px;
+                }
+                @keyframes bye {
+                    0%{top:140px;left:370px;}
+                    25%{top:160px;left:380px;}
+                    100%{top:20px;left:400px;}
+                }
+                .bye{
+                    animation-name: bye;
+                    animation-duration: 5s;
+                    animation-delay:21s;
+
+                }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="first">
+            <img  class="fly" src="./images/crow1.jpg" height="70px" width="60px"/>
+        </div>
+        <div class="second">
+            <img  class="go" src="./images/crow1.jpg" height="70px" width="60px"/>
+            <div class="pot"><div class="pebbles"></div>
+                <div class="rim">
+                </div>
+                <div class="rim1"></div>
+              </div>
+        </div>
+        <div class="third">
+            <img  class="steady" src="./images/crow1.jpg" height="70px" width="60px"/>
+            <div class="pot">
+                <div class="pebbles">
+                    <div class="fall ball7"></div>
+                    <div class=ball></div>
+                    <div class=ball1></div>
+                    <div class=ball2></div>
+                    <div class=ball3></div>
+                    <div class=ball4></div>
+                    <div class=ball5></div>
+                    <div class=ball6></div>
+                </div>
+                <div class="rim">
+                </div>
+                <div class="rim1">  
+                </div>
+         </div>
+        </div>
+        <!-- <div class="fourth">
+            <img class="water" src="./images/water.png" height="100" width="100">        </div>
+    </div> -->
+    <div class="fourth">
+        <img  class="steady1 bye" src="./images/crow1.jpg" height="70px" width="60px"/>
+        <div class="pot1">
+            <div class="rim2">
+            </div>
+            <div class="rim3">  
+            </div>
+    </div>
+</body>
+</html>
