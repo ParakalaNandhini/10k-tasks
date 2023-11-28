@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .main{
+        border: 3px solid rgb(116, 113, 113);
+        box-shadow: 3px 3px 3px black;
+        width:450px; 
+        border-radius: 20px;
+        margin-left: 500px; 
+        padding: 15px;
+    }
+    .img{
+        padding:5px;
+        background-color:rgb(240, 157, 173);
+        height:180px;
+        width:180px;
+        border-radius: 20px;
+    }
+    .grb1{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap:10px;
+        padding: 30px;
+    }
+    .img:hover{
+        background-color: darkcyan;
+        height:150px;
+        width:150px;
+    }
+    .grb2{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap:10px;
+        padding: 30px;
+    }
+    .im{
+        background-color:rgb(240, 157, 173);
+        border-radius: 20px;
+        grid-area: 1 / 1 / span  2 ;
+        height: 400px;
+        width:200px;
+        padding:5px;
+    }
+    .im:hover{
+        background-color: darkcyan;
+        height:320px;
+        width:150px;
+    }
+    .mi{
+        margin-left: 20px;
+    }
+    .grd3{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap:10px;
+        padding: 30px;
+    }
+    .mr{
+        background-color:rgb(240, 157, 173);
+        border-radius: 20px;
+        grid-area: 1 / 1 / span  2 ;
+        height: 400px;
+        width:200px;
+        padding:5px;
+    }
+    .mr:hover{
+        background-color: darkcyan;
+        height:320px;
+        width:150px;
+    }
+    .pic{
+        background-color:rgb(240, 157, 173);
+        border-radius: 20px;
+        grid-area:3 / 1 / span 2 / span 2;
+        height: 200px;
+        width: 400px;
+        padding: 5px;
+        
+    }
+    .pic:hover{
+        background-color: darkcyan;
+        height:180px;
+        width:380px;
+    }
+    h3{
+        font-family: "Brush Script MT";
+        font-size: 30px;
+    }
+</style>
+</head>
+<body>
+    <div class="main">
+        <center><h3>Photos</h3></center>
+     <h3>Today</h3>
+     <div class="grb1">
+    <img class="img" src="https://answersafrica.com/wp-content/uploads/2015/03/HBD.jpg"/>
+    <img class="img" src="./images/chandler.jpg"/>
+    <img class="img" src="./images/joey.jpg"/>
+    <img class="img" src="./images/Actor-Nani-Images-10.webp"/>
+    </div>
+    <h3>Yesterday</h3>
+    <div class="grb2">
+    <img class="im" src="./images/india.jpg"/>
+    <img class="img" src="./images/peace.jpeg"/>
+    <img class="img" src="./images/phoebe.jpg"/>
+    <img class="img" src="./images/aus.jpg"/>
+    <img class="img" src="./images/radhakrishna.webp"/>
+    
+    </div>
+    <h3>13 Nov</h3>
+    <img class="img mi" src="./images/rajni.jpg" height="60px" width="60px"/>
+    <h3>Last Month</h3>
+    <div class="grd3">
+    <img class="mr"src="./images/maniratnam.jpeg"/>
+    <img class="img" src="./images/smart.jpeg"/>
+    <img class="img" src="./images/smile.jpeg"/>
+    <img class="pic"src="https://i.pinimg.com/originals/b7/f4/b3/b7f4b3e9e23ccf652bdc6d7003013e8b.jpg"/>
+    </div>
+    </div>
+</body>
+</html>
