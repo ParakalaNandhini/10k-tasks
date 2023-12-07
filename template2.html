@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .main{
+            max-width:1500px;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+        }
+        span{
+            padding: 15px;
+            font-family: cursive;
+        }
+        .second{
+            padding: 220px;
+            border:1px solid black;
+            background-image: url(https://wallpaperaccess.com/full/185290.jpg);
+            background-size: cover;
+        }
+        .box1{
+            border:1px solid black;
+            background-color:white;
+            /*width:700px;*/
+            height:250px;
+        }
+        .flight{
+            color:white;
+            background-color: red;
+            padding:5px;
+        }
+        .flight:hover{
+            color:black;
+            background-color: rgb(181, 180, 180);
+        }
+        .head{
+            border:1px solid black;
+            background-color: black;
+        }
+        .bed{
+            color:white;
+            padding:5px;
+        }
+        .bed:hover{
+            color:black;
+            background-color: rgb(181, 180, 180);
+        }
+        .car{
+            color:white;
+            padding:5px;
+        }
+        .car:hover{
+            color:black;
+            background-color: rgb(181, 180, 180);
+        }
+        .s{
+            border:1px solid black;
+            padding:10px;
+            width:150px;
+            background-color: grey;
+            color:aliceblue;
+            margin-left: 10px;
+        }
+        .search:hover{
+            background-color: red;
+            padding: 5px;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap:10px;
+        }
+        .im{
+            grid-area: 1 / 1 / span 2 ;
+        }
+        .third{
+            padding:20px 150px 0px 150px;
+        }
+        .fourth{
+            padding:0px 150px 0px 150px;
+            margin-top: -120px;
+        }
+        .one{
+            width:520px;
+            border:1px solid transparent;
+            padding:10px;
+
+        }
+        .two{
+            width:520px;
+            border:1px solid transparent;
+            padding:10px;
+        }
+        .flex{
+            display: flex;
+            gap:40px;
+        }
+        .fifth{
+            background-color: black;
+            opacity:0.5;
+            color:white;
+            width:1100px;
+            padding:10px;
+            margin-left:150px;
+            font-size: larger;
+        }
+        .fifth:hover{
+            opacity: 1;
+        }
+        .sixth{
+            padding:0px 150px 0px 150px;
+        }
+        .down{
+            text-align: center;
+            color:grey;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="header"><i class="fa fa-map-marker logo" style="font-size:24px;color:red;"><span>Logo</span></i>
+    
+    <i class="fa fa-search search" style="font-size:24px;color:grey;"></i>
+    </div>
+    <br>
+    <div class="second">
+        <div class="box1">
+            <div class="head">
+            <i class="fa fa-plane flight" style="font-size:15px;"><span>Flight</span></i>
+            <i class="fa fa-bed bed" style="font-size:15px"><span>Hotel</span></i>
+            <i class="fa fa-car car" style="font-size:15px"><span>Rental</span></i>
+            </div>
+            <div><h3 style="font-family:Arial, Helvetica, sans-serif;padding:10px">Travel the world with us</h3></div>
+            <form style="padding:10px">
+                <label>From</label>
+                <br>
+                <input placeholder="Departing from">
+                <label style="position: absolute;top:390px">To</label>
+                <input placeholder="Arriving at">    
+            </form>
+            <div class="s">Search and find dates</div>
+            <br>
+        </div>
+    </div>
+        <div class="third">
+            <h2>Good Offers Right Now</h2>
+            <p>Up to <b>50%</b> discount.</p>
+            <div class="grid">
+                <img class="im" src="https://th.bing.com/th/id/OIP.g2iOd6U2R5E_zsf20fSX-wHaE7?rs=1&pid=ImgDetMain" height="410" width="600">
+                <img src="https://www.w3schools.com/w3images/newyork2.jpg"height="200" width="250">
+                <img src="https://a.loveholidays.com/media-library/production/3f1a7d717c4fead8d07ba419e8f13717fe98bf2d-3864x2576.jpg" height="200" width="250">
+                <img src="https://cdn-imgix-open.headout.com/blog/media/images/new/Leaning+Tower+Of+Pisa+Florence+Italy3.jpg?"height="200" width="250">
+                <img src="https://th.bing.com/th/id/OIP.zJnZdy9WpHCUJQSx1u3WcgHaE8?rs=1&pid=ImgDetMain" height="200" width="250">
+                <h2 style="position:relative;bottom:70px;left:15px;color:white">Cinque Terre</h2>
+                <h2 style="position:relative;bottom:60px;left:15px;color:white">Pisa</h2>
+                <h2 style="position:relative;bottom:60px;left:15px;color:white">Paris</h2>
+                <h2 style="position:relative;bottom:350px;left:630px;color:white">New York</h2>
+                <h2 style="position:relative;bottom:350px;left:280px;color:white">San Fransisco</h2>
+            </div>
+        </div>
+        <div class="fourth">
+            <h2>Explore Nature</h2>
+            <p>Travel with us and see nature at its finest</p>
+            <div class="flex">
+            <div class="one">
+                <img src="https://th.bing.com/th/id/OIP.i_eXV3iyFFROUZ5hd5-tAQHaFj?rs=1&pid=ImgDetMain"height="300" width="520">
+                <h2>West Coast,Norway</h2>
+                <p style="color:gray"> Roundtrip from $79</p>
+                <p>Western Norway is the region along the Atlantic coast of southern Norway.</p>
+                <p>Buy Tickets</p>
+            </div>
+            <div class="two">
+                <img src="https://th.bing.com/th/id/OIP.-cdlFHq1yrIbETu8cg5xwAHaFU?rs=1&pid=ImgDetMain"height="300" width="520">
+                <h2>Mountains,Austria</h2>
+                <p style="color:gray"> One-way from $39</p>
+                <p>The highest mountains in each mountain range and in each of the Austrian states.</p>
+                <p>Buy Tickets</p>
+            </div>
+            </div>
+        </div>
+        <div class="fifth">
+            <h1>Get the best offers first!</h1>
+            <p>Join our newsletter.</p>
+            <form>
+                <label>E-mail</label>
+                <br>
+                <br>
+                <input placeholder="Your Email address" style="padding:10px;width:1070px">
+                <br>
+                <br>
+                <button style="background-color:red;padding:10px">Subscribe</button>
+            </form>
+        </div>
+        <div class="sixth">
+            <h1>Contact</h1>
+            <p>Let us book your new trip!</p>
+            <p><i class="fa fa-map-marker" style="font-size:20px;"><span>Chicago,US</span></i></p>
+            <p><i class="fa fa-phone" style="font-size:20px;"></i><span>Phone: +00153493</span></p>
+            <p><i class="fa fa-envelope" style="font-size:20px;"></i><span>Email: mail@gmail.com</span></p>
+            <form style="padding:5px;">
+                <input placeholder="Name" style="padding:15px;width:1100px;">
+                <br>
+                <br>
+                <input placeholder="Email" style="padding:15px;width:1100px">
+                <br>
+                <br>
+                <input placeholder="Message" style="padding:15px;width:1100px">
+                <br>
+                <br>
+                <button style="background-color:black;color:white;padding:20px">SEND MESSAGE</button>
+            </form>
+        </div>
+        <div class="down">
+            <h3>Find us on social media</h3>
+            <p>
+                <i class="fa fa-facebook" style="font-size:24px; color:grey"></i>
+                <i class="fa fa-instagram" style="font-size:24px; color:grey"></i>
+                <i class="fa fa-snapchat" style="font-size:24px; color:grey"></i>
+                <i class="fa fa-pinterest" style="font-size:24px; color:grey"></i>
+                <i class="fa fa-twitter" style="font-size:24px; color:grey"></i>
+                <i class="fa fa-linkedin" style="font-size:24px; color:grey"></i>
+            </p>
+            <h3>powered by 10k coders</h3>
+        </div>
+    </div>
+</body>
+</html>
