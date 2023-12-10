@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <style>
+    .bar{
+        background-color: black;
+        color:white;
+        position: sticky;
+        top:0px;
+        z-index: 1;
+
+    }
+    .search{
+        padding: 10px;
+        position: relative;
+        left: 700px;
+    }
+    .search:hover{
+        background-color: red;
+    }
+    .images{
+        display: flex;
+        gap:20px;
+        justify-content: center;
+        padding: 30px;
+    }
+    .tour{
+        border:1px solid black;
+        background-color: black;
+        color: white;
+    }
+    .box{
+        border:1px solid black;
+        background-color: white;
+        color:grey;   
+    }
+    .box button{
+      padding: 10px;
+      margin-left: 30px;
+    }
+    .box span{
+        display: inline-block;
+        color:white;
+        background-color: black;
+        height: 20px;
+        width:20px;
+        text-align: center;
+        border-radius: 50%;
+        margin-left:900px;
+
+    }
+    .sep{
+        padding:10px;
+        border: 1px solid grey;
+    }
+    .btn1{
+        background-color: darkcyan;
+    }
+      label{
+        color:black
+      }
+      .image{
+        display: flex;
+        justify-content: space-around;
+        padding: 30px;
+    }
+    #tour{
+        padding: 60px;
+        text-align: center;
+    }
+    .info{
+        display: flex;
+    }
+    .info1 span{
+      padding-left: 20px;
+    }
+
+    .info2{
+        padding-left: 500px;
+
+    }
+    #band{
+      text-align: center;
+    }
+    .sep{
+      text-align: start;
+    }
+    .image img:hover{
+      opacity: 0.8;
+    }
+    .down{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+      <div class="container">
+        <ul class="nav nav-tabs bar">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#band">BAND</a></li>
+          <li><a href="#tour">TOUR</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">MORE<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#extras">extras</a></li>
+              <li><a href="#media">media</a></li>
+            </ul>
+          </li>
+
+    <li><i class="glyphicon glyphicon-search search"></i></li>
+  </ul>
+
+  <div class="container1">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="https://www.w3schools.com/w3images/la.jpg" alt="Los Angeles" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Los Angeles</h3>
+            <p>LA is always so much fun!</p>
+          </div>
+        </div>
+  
+        <div class="item">
+          <img src="https://www.w3schools.com/w3images/chicago.jpg" alt="Chicago" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Chicago</h3>
+            <p>Thank you, Chicago!</p>
+          </div>
+        </div>
+      
+        <div class="item">
+          <img src="https://www.w3schools.com/w3images/ny.jpg" alt="New york" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>New York</h3>
+            <p>We love the Big Apple!</p>
+          </div>
+        </div>
+      </div>
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+    <br>
+    <div id="band">
+      <h3>CARTOON BAND</h3>
+      <h5><i>We love music.</i></h5>
+      <p style="text-align:justify; padding:10px 150px 10px 150px;">Cartoon is an indie-electronic trio that blends smooth beats, soulful vocals, and atmospheric vibes. With influences ranging from synth-pop to R&B, their sound is a journey through the hazy landscapes of emotion. Lead vocalist Phoebe's haunting voice weaves seamlessly with the electronic beats crafted by Pulse and Rhythm, the dynamic duo on synths and drums. Together, they create an immersive experience, inviting you to get lost in the dreamy allure of cartoon's sonic universe.</p>
+      <div class="images">
+      <div class="card" style="width: 18rem;">
+        <img src="./images/chandler.jpg"height="200" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Chandler</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./images/joey.jpg"height="200" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Joey</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./images/phoebe.jpg"height="200" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Phoebe</p>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div id="tour" class="tour">
+      <h1>TOUR DATES</h1>
+      <i>Remember to book your tickets</i>
+      
+      <div class="box">
+        <div class="sep">October<button type="button" class="btn btn-warning" style="margin-left:42px;">Sold out</button></div>
+        <div class="sep">November<button type="button" class="btn btn-warning">Sold out</button></div>
+        <div class="sep">December<span>3</span></div>
+      </div>
+      <div class="image">
+        <div class="card" style="width: 18rem;">
+          <img src="https://images.pexels.com/photos/42541/pexels-photo-42541.jpeg?cs=srgb&dl=new-york-nyc-statue-of-liberty-42541.jpg&fm=jpg"height="200" width="200" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">New York</p>
+            <p class="card-text"><i>Wed 27 Dec 2023</i></p>
+            <p class="card-text">We are coming to entertain you.Join us</p>
+            <div class="container3">
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy tickets</button>
+              
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog modal-md">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header" style="background-color:darkcyan">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" style="text-align: center;"><i class="fa fa-suitcase" style="font-size:24px;color:white">Tickets</i></h4>
+                      </div>
+                      <div class="modal-body">
+                       
+                        <form>
+                          <div class="form-group">
+                            <label><i class="fa fa-cart-plus" style="font-size:18px">Tickets,$15 per person</i></label>
+                            <br>
+                            <input type="number" placeholder="How many?" style="color:black" required>
+                          </div>
+                          <div class="form-group">
+                            <label><i class="fa fa-user" style="font-size:18px">Send To</i></label>
+                            <br>
+                            <input type="email" placeholder="Enter email" style="color:black" required>
+                          </div>
+                          <button type="button" class="btn1 btn-block">Pay<i class="fa fa-check" style="font-size:10px"></i></button>
+                        </form>
+              
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-close" style="font-size:24px">Close</i></button>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+              </div>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://th.bing.com/th/id/OIP.eENRB8xfTX7ItESajMv2OQHaEO?w=322&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7"height="200" width="200" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Paris</p>
+            <p class="card-text"><i>Thu 28 Dec 2023</i></p>
+            <p class="card-text">We are coming to entertain you.Join us</p>
+            <div class="container3">
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy tickets</button>
+              
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog modal-md">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header" style="background-color:darkcyan">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" style="text-align: center;"><i class="fa fa-suitcase" style="font-size:24px;color:white">Tickets</i></h4>
+                      </div>
+                      <div class="modal-body">
+                       
+                        <form action="/action_page.php">
+                          <div class="form-group">
+                            <label><i class="fa fa-cart-plus" style="font-size:18px">Tickets,$15 per person</i></label>
+                            <br>
+                            <input type="number" placeholder="How many?" style="color:black" required>
+                          </div>
+                          <div class="form-group">
+                            <label><i class="fa fa-user" style="font-size:18px">Send To</i></label>
+                            <br>
+                            <input type="mail" placeholder="Enter email" style="color:black" required>
+                          </div>
+                          <button type="button" class="btn1 btn-block">Pay<i class="fa fa-check" style="font-size:10px"></i></button>
+                        </form>
+              
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-close" style="font-size:24px">Close</i></button>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+              </div>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://th.bing.com/th/id/OIP.57TNLZwf_UyaMZNZ6gR9HwHaEK?rs=1&pid=ImgDetMain"height="200" width="200"class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">San Francisco</p>
+            <p class="card-text"><i>Fri 29 Dec 2023</i></p>
+            <p class="card-text">We are coming to entertain you.Join us</p>
+            <div class="container3">
+                <!-- Trigger the modal with a button -->
+               <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy tickets</button
+              
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog modal-md">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header" style="background-color:darkcyan">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" style="text-align: center;"><i class="fa fa-suitcase" style="font-size:24px;color:white">Tickets</i></h4>
+                      </div>
+                      <div class="modal-body">
+                       
+                        <form>
+                          <div class="form-group">
+                            <label><i class="fa fa-cart-plus" style="font-size:18px">Tickets,$15 per person</i></label>
+                            <br>
+                            <input type="number" placeholder="How many?" style="color:black" required>
+                          </div>
+                          <div class="form-group">
+                            <label><i class="fa fa-user" style="font-size:18px">Send To</i></label>
+                            <br>
+                            <input type="mail" placeholder="Enter email" style="color:black" required>
+                          </div>
+                          <button type="button" class="btn1 btn-block">Pay<i class="fa fa-check" style="font-size:10px"></i></button>
+                        </form>
+              
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-close" style="font-size:24px">Close</i></button>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+              </div>
+          </div>
+        </div>
+    </div>
+    </div>
+    <div id="contact" style="padding:50px">
+      <h3><center>CONTACT</center></h3>
+      <p><center><i>Fan?Drop a note!</i></center></p>
+      <div class="info">
+      <div class="info1">
+        <p><i class="fa fa-map-marker" style="font-size:20px;"><span>Chicago,US</span></i></p>
+            <p><i class="fa fa-phone" style="font-size:20px;"></i><span>Phone: +00153493</span></p>
+            <p><i class="fa fa-envelope" style="font-size:18px;"></i><span style="position:relative;top:-20px;left:15px">mail:mi@gmail.com</span></p>
+      </div>
+      <div class="info2">
+        <form class="row g-3">
+        <div class="col-md-6">
+          <input type="text" placeholder="Name" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" placeholder="Email" required>
+        </div>
+        
+        <div class="col-12" style="padding-left:15px;padding-top:50px;">
+            <input type="text" placeholder="Message" style="width:380px;">
+        </div>
+        <br>
+        <button type="submit" class="btn1 btn-success">SEND</button>
+        </form>
+    </div>
+    </div>
+    </div>
+    <br>
+    <div>
+        <img id="extras" src="https://www.w3schools.com/w3images/map.jpg" width="1100">
+    </div>
+    <br>
+    <div class="down" id="media">
+        <h4>Find us on social media</h4>
+        <p>
+            <i class="fa fa-facebook" style="font-size:20px; color:grey"></i>
+            <i class="fa fa-instagram" style="font-size:20px; color:grey"></i>
+            <i class="fa fa-snapchat" style="font-size:20px; color:grey"></i>
+            <i class="fa fa-pinterest" style="font-size:20px; color:grey"></i>
+            <i class="fa fa-twitter" style="font-size:20px; color:grey"></i>
+            <i class="fa fa-linkedin" style="font-size:20px; color:grey"></i>
+        </p>
+
+       
+    </div>
+</div>
+
+</body>
+</html>
