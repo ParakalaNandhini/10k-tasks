@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        a=[10,5,63,350,50,36];
+        count=0;
+        b=0;
+        c=0;
+            for(i in a){
+            if(a[i]%10==0){
+               count++;
+            }
+        }
+        console.log(count);
+        console.log("even");
+       for(i in a){
+        if(a[i]%2==0){
+            console.log(a[i]);
+        }
+       } 
+       console.log("odd");
+       for(i of a){
+        if(i%2!=0){
+            console.log(i);
+        }
+       }
+       for(i in a){
+        if(a[i]%2==0){
+            b+=a[i];
+        }
+       }
+       console.log("sum of even numbers in an array is " + b);
+       for(i of a){
+        if(i%2!=0){
+            c+=i;
+        }
+       }
+       console.log("sum of odd numbers in an array is " + c);
+       
+
+
+       a=10;
+       b=9;
+       a=     a>b ? a + "is greater" : b+ "is greater"
+       document.write(a);
+    </script>
+</body>
+</html>
